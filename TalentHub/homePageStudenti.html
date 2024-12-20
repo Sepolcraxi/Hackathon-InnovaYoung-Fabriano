@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Aziende</title>
+    <link rel="stylesheet" href="cssFolder/homePageAziende.css">
+    <link rel="stylesheet" href="cssFolder/buttoncss/menuTendina.css">
+    <link rel="stylesheet" href="cssFolder/buttoncss/bottone.css">
+
+    <style>
+        .table-container{
+            max-width: 80%;
+        }  
+        .table li {
+            grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <table>
+                <ul>
+                    <li>
+                        <h1 class="title">TalentHub</h1>
+                    </li>
+                    <li>
+                    <form action="">
+                        <input class="input-field" type="text" placeholder="Cerca"> 
+                    </form></li>
+                    <li>
+                        <h2>Studente</h2>
+                    </li>
+                    <li>
+                        <button id="menuButton" class="menu-button" onclick="apri()">☰</button>
+                    </li>
+                </ul>
+            </table>
+  
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="container-title">Aziende</h1>
+
+        <div class="table-container">
+            <ul class="table">
+                <li class="header">
+                    <div>Nome</div>
+                    <div>Specializzazione</div>
+                    <div>indirizzo</div>
+                    <div>Città</div>
+                    <div>
+                        <button class="button type1">
+                            <span class="btn-txt">Inscriviti</span>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div>Azienda</div>
+                    <div>Informatica</div>
+                    <div>Via A02</div>
+                    <div>Fabriano</div>
+                    <div>
+                        <button class="button type1">
+                            <span class="btn-txt">Inscriviti</span>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div>Azienda</div>
+                    <div>Informatica</div>
+                    <div>Via A03</div>
+                    <div>Fabriano</div>
+                    <div>
+                        <button class="button type1">
+                            <span class="btn-txt">Inscriviti</span>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div>Azienda</div>
+                    <div>Informatica</div>
+                    <div>Via A04</div>
+                    <div>Fabriano</div>
+                    <div>
+                        <button class="button type1">
+                            <span class="btn-txt">Inscriviti</span>
+                        </button>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+
+
+
+
+    <!-- Menu nascosto -->
+    <div id="menu" class="menu">
+        <button id="closeMenuButton" class="menu-button close-button" onclick="chiudi()">✕</button>
+        <ul>
+            <li><a href="#">Richieste</a></li>
+            <li><a href="#">Risposte</a></li>
+            <li><a href="#">Domande Approvate</a></li>
+        </ul>
+    </div>
+
+    <!-- Script javascrpit -->
+    <script src="cssFolder/buttoncss/menuTendina.js"></script>
+</body>
+</html>

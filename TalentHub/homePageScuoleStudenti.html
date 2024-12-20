@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Scuola</title>
+    <link rel="stylesheet" href="cssFolder/homePageScuole.css">
+    <link rel="stylesheet" href="cssFolder/buttoncss/menuTendina.css">
+    <link rel="stylesheet" href="cssFolder/buttoncss/bottone.css">
+
+    <script>
+        function openHomePageStudenti(){
+            window.location.href = "homePageScuoleStudenti.html";
+        }
+
+        function openHomePageAziende(){
+            window.location.href = "homePageScuole.html";
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+
+            <table>
+                <ul>
+                    <li>
+                        <h1 class="title">TalentHub</h1>
+                    </li>
+                    <li>
+                        <form action="">
+                            <input class="input-field" type="text" placeholder="Cerca">
+                        </form>
+                    </li>
+                    <li>
+                        <h2>Scuola</h2>
+                    </li>
+                    <li>
+                        <button id="menuButton" class="menu-button" onclick="apri()">☰</button>
+                    </li>
+                </ul>
+            </table>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <nav class="navbar1">
+            <ul>
+                <li>
+                    <button onclick="openHomePageAziende();" id="btn1" type="button">Aziende</button>
+                </li>
+                <li>
+                    <button onclick="openHomePageStudenti();" id="btn2" type="button">Studenti</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="table-container">
+            <ul class="table">
+                <li class="header">
+                    <div>Nome</div>
+                    <div>Cognome</div>
+                    <div>Età</div>
+                    <div>Specializzazione</div>
+                    <div>Storico Aziendale</div>
+                    <div>CV</div>
+                    <div>Telefono</div>
+                </li>
+                <li>
+                    <div>Nome</div>
+                    <div>Cognome</div>
+                    <div>Età</div>
+                    <div>Specializzazione</div>
+                    <div>Storico Aziendale</div>
+                    <div>CV</div>
+                    <div>Telefono</div>
+                </li>
+                <li>
+                    <div>Nome</div>
+                    <div>Cognome</div>
+                    <div>Età</div>
+                    <div>Specializzazione</div>
+                    <div>Storico Aziendale</div>
+                    <div>CV</div>
+                    <div>Telefono</div>
+                </li>
+                <li>
+                    <div>Nome</div>
+                    <div>Cognome</div>
+                    <div>Età</div>
+                    <div>Specializzazione</div>
+                    <div>Storico Aziendale</div>
+                    <div>CV</div>
+                    <div>Telefono</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Menu nascosto -->
+    <div id="menu" class="menu">
+        <button id="closeMenuButton" class="menu-button close-button" onclick="chiudi()">✕</button>
+        <ul>
+            <li><a href="#">Richieste</a></li>
+            <li><a href="#">Risposte</a></li>
+            <li><a href="#">Domande Approvate</a></li>
+        </ul>
+    </div>
+
+    <!-- Script javascrpit -->
+    <script src="cssFolder/buttoncss/menuTendina.js"></script>
+
+
+</body>
+
+</html>

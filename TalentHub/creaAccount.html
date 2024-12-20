@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentHub Registrazione</title>
+    <link rel="stylesheet" href="cssFolder/creaAccount.css">
+
+    <script>
+        function openPage() {
+            // Verifica quale radio button è selezionato
+            const aziendaSelected = document.getElementById("chkAzienda").checked;
+
+            // Redirige a una pagina diversa in base alla selezione
+            if (aziendaSelected) {
+                window.location.href = "registraAzienda.html"; // Pagina per "Azienda"
+            } else {
+                window.location.href = "registraScuola.html"; // Pagina per "Scuola"
+            }
+        }
+        
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="registration-box">
+            <div id="left-part">
+                <h1 class="title">TalentHub</h1>
+                <p class="subtitle">Registrazione</p>
+            </div>
+            <div id="right-part">
+                <h4 id="options-title">Chi Sei?</h4>
+
+                <div class="options">
+
+                    <div id="azienda">
+                        <label><input type="radio" id="chkAzienda" name="user-type" checked> Azienda</label>
+                    </div>
+
+                    <div id="scuola">
+                        <label><input type="radio" id="chkScuola" name="user-type"> Scuola</label>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+                    <a href="index.html" class="accedi-account">Hai gia un account? Torna indietro</a>
+                    <button onclick="openPage();" type="button" class="button-submit">Avanti</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1E004F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+}
+
+.register-box {
+  background-color: #5D42D1;
+  padding: 20px 40px;
+  border-radius: 30px;
+  width: 600px;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+#left-part {
+  margin-right: 10%;
+}
+
+.title {
+  margin: 0;
+  margin-left: -10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: -10px;
+  margin-top: 10px;
+  color: #FEC84D;
+}
+
+#right-part {
+  margin-top: 20px;
+  margin-left: 5%;
+}
+
+#options-title {
+  padding-bottom: 10px;
+  margin: 0px;
+  color: #FBB03B;
+  font-weight: bolder;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #775FC6;
+  color: #fff;
+  font-size: 14px;
+}
+
+.input-field::placeholder {
+  color: #ddd;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-submit,
+.button-back {
+  background-color: #ffb300;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.actions .button-back a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-submit:hover,
+.button-back:hover {
+  background-color: #FEC84D;
+}

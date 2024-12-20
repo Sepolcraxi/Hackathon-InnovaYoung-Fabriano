@@ -1,0 +1,95 @@
+
+/* Bottone del menu (apertura e chiusura) */
+.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Forma rotonda */
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1001;
+}
+
+.menu-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Nascondi il menu a destra */
+    width: 300px;
+    height: 100%;
+    background-color: #BAB5E3;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.5s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/* Bottone di chiusura del menu */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #c0392b;
+}
+
+/* Stile della lista del menu */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+}
+
+.menu ul li {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    border-bottom: solid 2px #1E004F;
+}
+
+.menu ul li:first-child {
+    border-top: solid 2px #1E004F;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #1E004F;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #34495e;
+    color: #1abc9c;
+    border-radius: 5px;
+}
+
+/* Mostra il menu aperto */
+.menu.open {
+    right: 0;
+}
